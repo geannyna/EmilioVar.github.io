@@ -1,0 +1,139 @@
+@font-face {
+    font-family: JetBrains;
+    src: url("./media/fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Medium.ttf");
+    src: url("./media/fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Bold.ttf");
+    src: url("./media/fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Italic.ttf");
+    src: url("./media/fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Regular.ttf");
+}
+
+* {
+    color: var(--white-color);
+    font-family: 'JetBrains';
+}
+:root{
+    --background-color: #0f0f0f;
+    --second-color: #532E1C;
+    --third-color: #C5A880;
+    --white-color: #E6E6E6;
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--background-color) !important;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* HEADER */
+
+.heading {
+    width: 100vw;
+    height: 100vh;
+}
+.img-header {
+    transition: 1s;
+    animation: cont-header 5s ease-in-out backwards infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.saludo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: .8em;
+}
+.text-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cab-1 {
+    animation: first-text 1s ease-in-out 1s backwards;
+}
+.cab-2 {
+    animation: second-text 1s ease-in-out 2s backwards;
+}
+.cab-3 {
+    animation: third-text 2s ease-in-out 3s backwards;
+}
+.arrow-down {
+    animation: arrow-down 2s ease-in-out 4s backwards;
+}
+.arrow-down-move {
+    animation: arrow-down-move 2s ease-in-out 4s backwards infinite;
+}
+
+
+@keyframes first-text {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes second-text {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes third-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes arrow-down-move {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Final del HEADER */
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title-first {
+    padding: 15px;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.txt-1 {
+    opacity: 0;
+    transition: 2s ease-in-out 1s;
+}
+.prueba2 {
+    opacity: 0;
+    transition: 1s ease-in-out .5s;
+}
+.visible {
+    opacity: 1;
+    transform: translateX(0px);
+}
