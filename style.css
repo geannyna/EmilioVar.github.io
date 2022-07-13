@@ -40,7 +40,7 @@ p {
 }
 .saludo {
     font-family: 'Press Start 2P', cursive;
-    font-size: .8em;
+    font-size: .7em;
 }
 .text-header {
     display: flex;
@@ -127,13 +127,18 @@ p {
 }
 .txt-1 {
     opacity: 0;
-    transition: 2s ease-in-out 1s;
+    transition: 2s ease-in-out .5s;
 }
 .prueba2 {
     opacity: 0;
     transition: 1s ease-in-out .5s;
 }
 .visible {
-    opacity: 1;
-    transform: translateX(0px);
+    opacity: 1 !important;
+}
+
+/* SECOND SECTION */
+
+.icons, .icons2, .icons3, .icons4, .icons5, .icons6 {
+    opacity: 0;
 }

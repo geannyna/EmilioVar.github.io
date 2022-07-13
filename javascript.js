@@ -5,7 +5,7 @@ var typed = new Typed(".typed", {
         '<span class="saludo">desarrollador</span>',
         '<span class="saludo">programador</span>',
         '<span class="saludo">investigador</span>',
-        '<span class="saludo">inventor</span>',
+        '<span class="saludo">transformador</span>',
         '<span class="saludo">estudiante</span>'
     ],
     typeSpeed: 80,
@@ -55,3 +55,57 @@ const observer = new IntersectionObserver(callback, options);
 observer.observe(imagen1);
 observer.observe(imagen2);
 observer.observe(prueba2);
+
+/* iconos */
+// esto hay que mejorarlo muchísimo con un forEach
+
+const items = document.querySelector(".icons");
+const items2 = document.querySelector(".icons2");
+const items3 = document.querySelector(".icons3");
+const items4 = document.querySelector(".icons4");
+const items5 = document.querySelector(".icons5");
+const items6 = document.querySelector(".icons6");
+const items7 = document.querySelector(".icons7");
+const items8 = document.querySelector(".icons8");
+const itemsCont = document.querySelector(".skill-icon");
+
+function callback2(entries,observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        observer.unobserve(entry.target);
+        icons();
+    }
+    });
+}
+
+const options2 = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+};
+
+const observador = new IntersectionObserver(callback2,options2);
+
+function icons () {
+    gsap.from(".skill-icon", {
+        duration: 6,
+        scale: 0, 
+        x: -50,
+        opacity: 0, 
+        delay: 0.5, 
+        stagger: 0.4,
+        ease: "elastic", 
+        force3D: true
+    });
+
+    items.classList.add("visible");
+    items2.classList.add("visible");
+    items3.classList.add("visible");
+    items4.classList.add("visible");
+    items5.classList.add("visible");
+    items6.classList.add("visible");
+    items7.classList.add("visible");
+    items8.classList.add("visible");
+}
+
+observador.observe(items);
