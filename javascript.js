@@ -17,20 +17,23 @@ var typed = new Typed(".typed", {
 
 /* Otros scripts */
 
-const imagen1 = document.querySelector('.title-first');
-const imagen2 = document.querySelector('.txt-1');
-const prueba2 = document.querySelector(".prueba2");
+const titleFirst = document.querySelector('.title-first');
+const basicData = document.querySelector('.txt-1');
+const titleSecond = document.querySelector(".title-second");
+const Footer = document.querySelector(".Footer");
+const Footer1 = document.querySelector(".Footer-1")
+const Footer2 = document.querySelector(".Footer-2")
 
 
 /* window.addEventListener("scroll", () => {
     if(window.scrollY > 400) {
-        imagen1.classList.add("visible")
+        titleFirst.classList.add("visible")
     }
 })
 
 window.addEventListener("scroll", () => {
     if(window.scrollY > 400) {
-        imagen2.classList.add("visible")
+        basicData.classList.add("visible")
     }
 }) */
 
@@ -40,6 +43,7 @@ function callback(entries, observer) {
         console.log('Elemento visible');
         observer.unobserve(entry.target);
         entry.target.classList.add("visible");
+        entry.target.style.transform = "translateY(-20px)";
     }
     });
 }
@@ -47,27 +51,24 @@ function callback(entries, observer) {
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.5
 };
 
 const observer = new IntersectionObserver(callback, options);
 
-observer.observe(imagen1);
-observer.observe(imagen2);
-observer.observe(prueba2);
+observer.observe(titleFirst);
+observer.observe(basicData);
+observer.observe(titleSecond);
+observer.observe(Footer);
+observer.observe(Footer1);
+observer.observe(Footer2);
 
 /* iconos */
 // esto hay que mejorarlo muchísimo con un forEach
 
 const items = document.querySelector(".icons");
-const items2 = document.querySelector(".icons2");
-const items3 = document.querySelector(".icons3");
-const items4 = document.querySelector(".icons4");
-const items5 = document.querySelector(".icons5");
-const items6 = document.querySelector(".icons6");
-const items7 = document.querySelector(".icons7");
-const items8 = document.querySelector(".icons8");
 const itemsCont = document.querySelector(".skill-icon");
+const itemsItered = document.querySelectorAll(".skill-icon");
 
 function callback2(entries,observer) {
     entries.forEach((entry) => {
@@ -81,31 +82,29 @@ function callback2(entries,observer) {
 const options2 = {
     root: null,
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.5
 };
 
 const observador = new IntersectionObserver(callback2,options2);
 
 function icons () {
     gsap.from(".skill-icon", {
-        duration: 6,
+        duration: 4,
         scale: 0, 
         x: -50,
         opacity: 0, 
-        delay: 0.5, 
+        delay: 0.4, 
         stagger: 0.4,
         ease: "elastic", 
         force3D: true
     });
 
-    items.classList.add("visible");
-    items2.classList.add("visible");
-    items3.classList.add("visible");
-    items4.classList.add("visible");
-    items5.classList.add("visible");
-    items6.classList.add("visible");
-    items7.classList.add("visible");
-    items8.classList.add("visible");
+    itemsItered.forEach(e => {
+        e.classList.add("visible");
+        console.log(`aplicado al elemento ${e}`)
+    })
 }
 
 observador.observe(items);
+
+let iconos = document.querySelectorAll(".icon");

@@ -32,11 +32,107 @@ p {
     height: 100vh;
 }
 .img-header {
+    position: relative;
     transition: 1s;
     animation: cont-header 5s ease-in-out backwards infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* img icons */
+
+.el1 {
+    animation: el1 6s ease-in-out backwards infinite;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+@keyframes el1 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        fransform: translateY(0px);
+    }
+}
+
+
+.el2 {
+    animation: el2 6s ease-in-out backwards .5s infinite;
+    position: absolute;
+    top:50%;
+    left: 25%;
+}
+
+@keyframes el2 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        fransform: translateY(0px);
+    }
+}
+
+.el3 {
+    animation: el3 6s ease-in-out backwards 1s infinite;
+    position: absolute;
+    top: 75%;
+    right: 15%;
+}
+
+@keyframes el3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        fransform: translateY(0px);
+    }
+}
+
+
+.el4 {
+    animation: el4 6s ease-in-out backwards 1.5s infinite;
+    position: absolute;
+    bottom: 65%;
+    right: 20%;
+}
+
+@keyframes el4{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        fransform: translateY(0px);
+    }
+}
+
+/* Después de los iconos de la imágen*/
+
+@keyframes icon {
+    0% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(30px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+    
 }
 .saludo {
     font-family: 'Press Start 2P', cursive;
@@ -103,13 +199,13 @@ p {
 }
 @keyframes arrow-down-move {
     0% {
-        transform: translateY(20px);
+        transform: scale(1);
     }
     50% {
-        transform: translateY(0px)
+        transform: scale(1.1)
     }
     100% {
-        transform: translateY(20px);
+        transform: scale(1);
     }
 }
 
@@ -127,7 +223,7 @@ p {
 }
 .txt-1 {
     opacity: 0;
-    transition: 2s ease-in-out .5s;
+    transition: 2s ease-in-out;
 }
 .prueba2 {
     opacity: 0;
@@ -139,6 +235,30 @@ p {
 
 /* SECOND SECTION */
 
+.title-second {
+    padding: 15px;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+
 .icons, .icons2, .icons3, .icons4, .icons5, .icons6 {
     opacity: 0;
+}
+
+/* FOOTER */
+
+.Footer {
+    opacity: 0;
+    transition: 1s ease-in-out .5s;
+}
+
+.Footer-1 {
+    opacity: 0;
+    transition: 1s ease-in-out 1.5s;
+}
+
+.Footer-2 {
+    opacity: 0;
+    transition: 1s ease-in-out 1.5s;
+
 }
