@@ -13,3 +13,11 @@ let typed2 = new Typed("#typed2", {
     backSpeed: 30,
     showcursor: true
 });
+
+let ageEn = document.querySelector(".ageEn");
+
+var yearsEn = moment().diff('1995-07-19', 'years');
+console.log("desde aqui edad")
+console.log(yearsEn)
+
+ageEn.innerHTML = yearsEn;
