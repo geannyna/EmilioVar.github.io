@@ -4,7 +4,8 @@ let typed2 = new Typed("#typed2", {
         '<span class="saludo">programmer</span>',
         '<span class="saludo">investigator</span>',
         '<span class="saludo">creator</span>',
-        '<span class="saludo">studient</span>'
+        '<span class="saludo">studient</span>',
+        '<span class="saludo">dreamer</span>'
     ],
     typeSpeed: 80,
     loop: true,

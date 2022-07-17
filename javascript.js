@@ -127,7 +127,8 @@ let typed = new Typed("#typed", {
         '<span class="saludo">programador</span>',
         '<span class="saludo">investigador</span>',
         '<span class="saludo">creador</span>',
-        '<span class="saludo">estudiante</span>'
+        '<span class="saludo">estudiante</span>',
+        '<span class="saludo">soñador</span>'
     ],
     typeSpeed: 80,
     loop: true,
