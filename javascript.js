@@ -1,20 +1,3 @@
-/* Typed.js */
-
-var typed = new Typed(".typed", {
-    strings: [
-        '<span class="saludo">desarrollador</span>',
-        '<span class="saludo">programador</span>',
-        '<span class="saludo">investigador</span>',
-        '<span class="saludo">transformador</span>',
-        '<span class="saludo">estudiante</span>'
-    ],
-    typeSpeed: 80,
-    loop: true,
-    backDelay: 1000,
-    backSpeed: 30,
-    showcursor: true
-});
-
 /* Otros scripts */
 
 const titleFirst = document.querySelector('.title-first');
@@ -136,3 +119,19 @@ window.onscroll = function() {
         lang.style.opacity = "1";
     }
 };
+
+/* Typed.js */
+let typed = new Typed("#typed", {
+    strings: [
+        '<span class="saludo">desarrollador</span>',
+        '<span class="saludo">programador</span>',
+        '<span class="saludo">investigador</span>',
+        '<span class="saludo">creador</span>',
+        '<span class="saludo">estudiante</span>'
+    ],
+    typeSpeed: 80,
+    loop: true,
+    backDelay: 1000,
+    backSpeed: 30,
+    showcursor: true
+});
