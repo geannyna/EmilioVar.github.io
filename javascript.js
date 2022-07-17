@@ -15,6 +15,21 @@ var typed = new Typed(".typed", {
     showcursor: true
 });
 
+var typedEn = new Typed(".typedEn", {
+    strings: [
+        '<span class="saludo">desarrollador</span>',
+        '<span class="saludo">programador</span>',
+        '<span class="saludo">investigador</span>',
+        '<span class="saludo">transformador</span>',
+        '<span class="saludo">estudiante</span>'
+    ],
+    typeSpeed: 80,
+    loop: true,
+    backDelay: 1000,
+    backSpeed: 30,
+    showcursor: true
+});
+
 /* Otros scripts */
 
 const titleFirst = document.querySelector('.title-first');
@@ -108,3 +123,31 @@ function icons () {
 observador.observe(items);
 
 let iconos = document.querySelectorAll(".icon");
+
+/* Language selector */
+let lang = document.querySelector("#language-cont");
+let langSel = document.querySelector("#languageSel"); 
+
+    lang.addEventListener("mouseover", e => {
+        langSel.classList.add("visible");
+    });
+    lang.addEventListener("mouseout", e => {
+        langSel.classList.remove("visible");
+    });
+
+/* window.addEventListener("scroll", e => {
+    if(window.scrollY >= 100) {
+        console.log("haciendo scroll")
+        lang.style.opacity = "0 !important";
+    } else {
+        lang.style.opacity = "1 !important";
+    }
+}) */
+
+window.onscroll = function() {
+    if(window.scrollY >= 300) {
+        lang.style.opacity = "0";
+    } else {
+        lang.style.opacity = "1";
+    }
+};

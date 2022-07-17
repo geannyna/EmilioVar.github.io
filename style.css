@@ -25,9 +25,27 @@ p {
     font-size: 1em;
 }
 
+/* language selector */
+
+#language-cont {
+    position: fixed;
+    transition: 1s;
+    top: 20px;
+    left: 30px;
+}
+
+#languageSel {
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+    top: 50px;
+    left: 30px;
+}
+
 /* HEADER */
 
 .heading {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -261,4 +279,10 @@ p {
     opacity: 0;
     transition: 1s ease-in-out 1.5s;
 
+}
+
+/* DOWNFOOTER */
+
+.downFooter {
+    height: 50px;
 }
