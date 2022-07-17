@@ -32,6 +32,7 @@ p {
     transition: 1s;
     top: 20px;
     left: 30px;
+    z-index: 9999;
 }
 
 #languageSel {
@@ -40,6 +41,7 @@ p {
     opacity: 0;
     top: 50px;
     left: 30px;
+    z-index: 9999;
 }
 
 /* HEADER */
