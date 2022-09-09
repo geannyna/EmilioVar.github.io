@@ -288,3 +288,63 @@ p {
 .downFooter {
     height: 50px;
 }
+
+/* CURRICULUM BUTTON */
+
+@import url('https://fonts.googleapis.com/css?family=Barrio|Montserrat:700');
+
+#btn-curriculum {
+  margin: auto;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fafafa;
+  background-color: rgb(18,118,168);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4);
+  transition: .3s all ease;
+  letter-spacing: .1rem;
+  font-size: .85rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  padding-left: 2.5rem;
+  transition: 1s;
+}
+  
+  #btn-curriculum:before {
+    content: '_';
+    position: absolute;
+    left: 1.4rem;
+    top: .9rem;
+    transition: 1s;
+  }
+  
+  #btn-curriculum:after {
+    content: '>';
+    position: absolute;
+    left: .8rem;
+    top: 1rem;
+    transition: 1s;
+  }
+  
+  #btn-curriculum:hover {
+    box-shadow: 1px 1px 20px rgba(150,150,150,.2);
+    top: -.3rem;
+    right: -.1rem;
+    cursor: pointer;
+  }
+    #btn-curriculum:hover::before {
+      content: '_';
+      position: absolute;
+      left: .95rem;
+      top: .72rem;
+      transform: translateY(-1px);
+    }
+  
+    #btn-curriculum:hover::after {
+      content: '>';
+      position: absolute;
+      left: 1.1rem;
+      top: 1rem;
+    }

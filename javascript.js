@@ -6,6 +6,7 @@ const titleSecond = document.querySelector(".title-second");
 const Footer = document.querySelector(".Footer");
 const Footer1 = document.querySelector(".Footer-1")
 const Footer2 = document.querySelector(".Footer-2")
+const btnCurriculum = document.querySelector("#btn-curriculum");
 
 
 /* window.addEventListener("scroll", () => {
@@ -45,6 +46,7 @@ observer.observe(titleSecond);
 observer.observe(Footer);
 observer.observe(Footer1);
 observer.observe(Footer2);
+observer.observe(btnCurriculum);
 
 /* iconos */
 // esto hay que mejorarlo muchísimo con un forEach
