@@ -289,6 +289,13 @@ p {
     height: 50px;
 }
 
+/* CERTIFICATES */
+
+.sectionCertificates {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
 /* CURRICULUM BUTTON */
 
 @import url('https://fonts.googleapis.com/css?family=Barrio|Montserrat:700');
