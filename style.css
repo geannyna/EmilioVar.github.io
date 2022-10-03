@@ -274,13 +274,17 @@ p {
 
 .Footer-1 {
     opacity: 0;
-    transition: 1s ease-in-out 1.5s;
+    transition: 1s ease-in-out 1s;
 }
 
 .Footer-2 {
     opacity: 0;
     transition: 1s ease-in-out 1.5s;
+}
 
+.Footer-3 {
+    opacity: 0;
+    transition: 1s ease-in-out 2s;
 }
 
 /* DOWNFOOTER */
