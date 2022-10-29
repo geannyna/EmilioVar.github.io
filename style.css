@@ -10,12 +10,14 @@
     color: var(--white-color);
     font-family: 'JetBrains';
 }
-:root{
+
+:root {
     --background-color: #0f0f0f;
     --second-color: #532E1C;
     --third-color: #C5A880;
     --white-color: #E6E6E6;
 }
+
 body {
     overflow-x: hidden;
     background-color: var(--background-color) !important;
@@ -51,6 +53,7 @@ p {
     width: 100vw;
     height: 100vh;
 }
+
 .img-header {
     position: relative;
     transition: 1s;
@@ -73,9 +76,11 @@ p {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         fransform: translateY(0px);
     }
@@ -85,7 +90,7 @@ p {
 .el2 {
     animation: el2 6s ease-in-out backwards .5s infinite;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 25%;
 }
 
@@ -93,9 +98,11 @@ p {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         fransform: translateY(0px);
     }
@@ -112,9 +119,11 @@ p {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         fransform: translateY(0px);
     }
@@ -128,13 +137,15 @@ p {
     right: 20%;
 }
 
-@keyframes el4{
+@keyframes el4 {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         fransform: translateY(0px);
     }
@@ -146,18 +157,22 @@ p {
     0% {
         transform: translateY(0px)
     }
+
     50% {
         transform: translateY(30px)
     }
+
     100% {
         transform: translateY(0px)
     }
-    
+
 }
+
 .saludo {
     font-family: 'Press Start 2P', cursive;
     font-size: .7em;
 }
+
 .text-header {
     display: flex;
     justify-content: center;
@@ -167,15 +182,19 @@ p {
 .cab-1 {
     animation: first-text 1s ease-in-out 1s backwards;
 }
+
 .cab-2 {
     animation: second-text 1s ease-in-out 2s backwards;
 }
+
 .cab-3 {
     animation: third-text 2s ease-in-out 3s backwards;
 }
+
 .arrow-down {
     animation: arrow-down 2s ease-in-out 4s backwards;
 }
+
 .arrow-down-move {
     animation: arrow-down-move 2s ease-in-out 4s backwards infinite;
 }
@@ -186,44 +205,54 @@ p {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px)
     }
 }
+
 @keyframes second-text {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px)
     }
 }
+
 @keyframes third-text {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 @keyframes arrow-down {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 @keyframes arrow-down-move {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1)
     }
+
     100% {
         transform: scale(1);
     }
@@ -241,14 +270,17 @@ p {
     opacity: 0;
     transition: 1.5s ease-in-out;
 }
+
 .txt-1 {
     opacity: 0;
     transition: 2s ease-in-out;
 }
+
 .prueba2 {
     opacity: 0;
     transition: 1s ease-in-out .5s;
 }
+
 .visible {
     opacity: 1 !important;
 }
@@ -261,7 +293,12 @@ p {
     transition: 1.5s ease-in-out;
 }
 
-.icons, .icons2, .icons3, .icons4, .icons5, .icons6 {
+.icons,
+.icons2,
+.icons3,
+.icons4,
+.icons5,
+.icons6 {
     opacity: 0;
 }
 
@@ -305,57 +342,82 @@ p {
 @import url('https://fonts.googleapis.com/css?family=Barrio|Montserrat:700');
 
 #btn-curriculum {
-  margin: auto;
-  padding: 1rem;
-  text-transform: uppercase;
-  color: #fafafa;
-  background-color: rgb(18,118,168);
-  border: none;
-  border-radius: 3px;
-  box-shadow: 1px 1px 10px rgba(50,50,50,.4);
-  transition: .3s all ease;
-  letter-spacing: .1rem;
-  font-size: .85rem;
-  position: relative;
-  top: 0;
-  right: 0;
-  padding-left: 2.5rem;
-  transition: 1s;
+    margin: auto;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #fafafa;
+    background-color: rgb(18, 118, 168);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(50, 50, 50, .4);
+    transition: .3s all ease;
+    letter-spacing: .1rem;
+    font-size: .85rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-left: 2.5rem;
+    transition: 1s;
 }
-  
-  #btn-curriculum:before {
+
+#btn-curriculum:before {
     content: '_';
     position: absolute;
     left: 1.4rem;
     top: .9rem;
     transition: 1s;
-  }
-  
-  #btn-curriculum:after {
+}
+
+#btn-curriculum:after {
     content: '>';
     position: absolute;
     left: .8rem;
     top: 1rem;
     transition: 1s;
-  }
-  
-  #btn-curriculum:hover {
-    box-shadow: 1px 1px 20px rgba(150,150,150,.2);
+}
+
+#btn-curriculum:hover {
+    box-shadow: 1px 1px 20px rgba(150, 150, 150, .2);
     top: -.3rem;
     right: -.1rem;
     cursor: pointer;
-  }
-    #btn-curriculum:hover::before {
-      content: '_';
-      position: absolute;
-      left: .95rem;
-      top: .72rem;
-      transform: translateY(-1px);
-    }
-  
-    #btn-curriculum:hover::after {
-      content: '>';
-      position: absolute;
-      left: 1.1rem;
-      top: 1rem;
-    }
+}
+
+#btn-curriculum:hover::before {
+    content: '_';
+    position: absolute;
+    left: .95rem;
+    top: .72rem;
+    transform: translateY(-1px);
+}
+
+#btn-curriculum:hover::after {
+    content: '>';
+    position: absolute;
+    left: 1.1rem;
+    top: 1rem;
+}
+/* PROJECTS WINDOW */
+#projects-w{
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 15px;
+    background-color: var(--white-color);
+}
+
+#projects-sup{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+    background: var(--second-color);
+}

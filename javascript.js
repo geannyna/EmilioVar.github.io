@@ -9,6 +9,7 @@ const Footer2 = document.querySelector(".Footer-2");
 const Footer3 = document.querySelector(".Footer-3");
 const certificates = document.querySelector(".sectionCertificates");
 const btnCurriculum = document.querySelector("#btn-curriculum");
+const projectsCont = document.querySelector('#projects-cont');
 
 
 /* window.addEventListener("scroll", () => {
@@ -152,3 +153,30 @@ console.log("desde aqui edad")
 console.log(years)
 
 age.innerHTML = years;
+
+/** PROJECTS
+ * get the projects with fetch
+ * itering projects in the document
+ */
+
+ fetch('./projects.json')
+ .then(response => response.json())
+ .then(projects =>
+
+     projects.forEach(project => {
+         console.log(project.title)
+         let list = document.createElement("div");
+         list.classList.add ("col-12","col-sm-6","col-md-4","d-flex","justify-content-center");
+         list.innerHTML = `
+ <div class="card m-2" style="width: 18rem;">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+ <h5 class="card-title">${project.title}</h5>
+ <p class="card-text">${project.description}</p>
+ <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+ `;
+         projectsCont.appendChild(list);
+     })
+ )

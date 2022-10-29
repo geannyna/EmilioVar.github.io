@@ -1,0 +1,26 @@
+[
+    {
+        "title": "login",
+        "description": "Página de login con animacion de iconos que aparecen y se desplazan a lo largo del display"
+    },
+    {
+        "title": "painters",
+        "description": "above the fold con bonito diseño, colorido y animado"
+    },
+    {
+        "title": "videoclub",
+        "description": "videoclub con carrusel de nuevos productos, catalogo y responsive."
+    },
+    {
+        "title": "Parque de bolas",
+        "description": "Esto es un parque de bolas"
+    },
+    {
+        "title": "Parque de bolas",
+        "description": "Esto es un parque de bolas"
+    },
+    {
+        "title": "Parque de bolas",
+        "description": "Esto es un parque de bolas"
+    }
+]
