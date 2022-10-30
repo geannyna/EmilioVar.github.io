@@ -399,6 +399,7 @@ p {
 }
 /* PROJECTS WINDOW */
 #projects-w{
+    display: none;
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -413,6 +414,9 @@ p {
 }
 
 #projects-sup{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
     padding: 25px;
     display: flex;
     justify-content: space-between;
