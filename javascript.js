@@ -10,6 +10,8 @@ const Footer3 = document.querySelector(".Footer-3");
 const certificates = document.querySelector(".sectionCertificates");
 const btnCurriculum = document.querySelector("#btn-curriculum");
 const projectsCont = document.querySelector('#projects-cont');
+//broma
+const jocker = document.querySelector('#jocker');
 
 
 /* window.addEventListener("scroll", () => {
@@ -180,3 +182,21 @@ age.innerHTML = years;
          projectsCont.appendChild(list);
      })
  )
+
+ // broma
+ fetch("https://v2.jokeapi.dev/joke/Programming?lang=es")
+ .then((res) => res.json())
+ .then((result) => {
+    if(result.type == "single"){
+        jocker.innerHTML = result.joke;
+    } else if(result.type == "twopart"){
+        jocker.innerHTML =
+        `
+        <p>${result.setup}</p>
+        <p>${result.delivery}</p>
+        `
+    } else {
+        jocker.innerHTML = "no hay chiste"
+    }
+ })
+
